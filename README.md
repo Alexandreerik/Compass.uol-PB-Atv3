@@ -206,9 +206,18 @@ ChaveErik
 1. Clique em editar;
 2. Selecione sua sub-rede pública;
 3. Habilite o IP público;
-4. Em firewall crie um novo grupo de segurança com o nome Bastion.
+4. Em firewall crie um novo grupo de segurança com o nome Bastion;
+5. Role a página até dados avançados;
+6. Em dados do usuário copie e cole os seguintes comandos:
+```
+#!/bin/bash
 
+yum update -y
 
+# Configuração da porta SSH
+echo "Port 22222" >> /etc/ssh/sshd_config
+systemctl restart sshd.service
+```
 
 # Criação do Load balance
 
