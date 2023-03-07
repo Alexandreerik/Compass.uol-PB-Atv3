@@ -409,7 +409,7 @@ mount -a
 
 # Executando o docker-compose do repositorio
 yum install git -y
-git clone https://github.com/Alexandreerik/Compass.uol-PB-Atv3.git /home/ec2-user/atividade_aws_docker
+git clone https://github.com/Alexandreerik/Compass.uol-PB-Atv3.git /home/ec2-user/Compass.uol-PB-Atv3
 docker-compose -f /home/ec2-user/Compass.uol-PB-Atv3/docker-compose.yml up -d
 ```
 
